@@ -1,24 +1,11 @@
-from utilities.utility import function
-
-
-
-def permut():
-    flag = 0
-    while flag == 0:
-        try:
-            word = list(input("enter the string\n"))
-            type[word] = string1
-            flag = 1
-        except Exception as e:
-            print("enter string only")
-        for string1 in function.function(word):
-            print(string1)
-
-        function.function(word)
-
+from utilities.utility import permut
 
 if __name__ == '__main__':
     try:
-        permut()
+        var1 = "ABC"
+        var2 = list(var1)
+        print(var2)
+        j = 0
+        permut(var2, j)
     except Exception as e:
         print(e)
