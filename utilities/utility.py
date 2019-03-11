@@ -732,25 +732,23 @@ def string_insertion_sort():
 "************************************************* permutation **************************************************"
 
 
-def function(lst):
+def permut(a, j):
+    if j == len(a):
+        for i in range(0, len(a)):
+            print(a[i], end=" ")
+        print()
+    else:
+        for k in range(j, len(a)):
+            temp = a[k]
+            a[k] = a[j]
+            a[j] = temp
+            permut(a, j + 1)
+            temp = a[k]
+            a[k] = a[j]
+            a[j] = temp
 
-    if len(lst) == 0:
-        # if there is empty list then permutation is not done
-        return []
-    if len(lst) == 1:
-        # if there is only one element present in list then only one permutation is done
-        return [lst]
-        l = []
-    # empty list that will store current permutation
-    for i in range(len(lst)):  # Iterate the input and calculate the permutation
-        m = lst[i]
-        # print("m = " ,m)
-        rem = lst[:i] + lst[i + 1:]  # Extract word[i](remWord is remaining words)
-        # print("rem =" ,rem)
-        for p in f1.permutation(rem):  # Generating all permutation
-            l.append([m] + p)
 
-    return l
+
 
 
 "********************************************* string bubble sort *************************************************"
