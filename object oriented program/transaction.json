@@ -1,0 +1,32 @@
+{
+  "amazon": {
+    "company_name": "amazon",
+    "company_symbol": "ama",
+    "share_Price": 1420,
+    "total_share": 24
+  },
+  "google": {
+    "company_name": "google",
+    "company_symbol": "gg",
+    "share_Price": 10000,
+    "total_share": 17
+  },
+  "bing": {
+    "company_name": "bing",
+    "company_symbol": "bi",
+    "share_Price": 1467,
+    "total_share": 21
+  },
+  "yahoo": {
+    "company_name": "yahoo",
+    "company_symbol": "yh",
+    "share_Price": 1725,
+    "total_share": 36
+  },
+  "adidas": {
+    "company_name": "adidas",
+    "company_symbol": "add",
+    "share_Price": 50,
+    "total_share": 2
+  }
+}

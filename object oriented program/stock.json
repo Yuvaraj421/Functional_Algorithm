@@ -1,0 +1,30 @@
+  {
+    "Stock Report": [
+        {
+            "Stock Name": "Google",
+            "Number of Share": 24,
+            "Share Price": 1000
+        },
+        {
+            "Stock Name": "Micro",
+            "Number of Share": 26,
+            "Share Price": 1000
+        },
+        {
+            "Stock Name": "IBMComp",
+            "Number of Share": 20,
+            "Share Price": 1000
+        },
+        {
+            "Stock Name": "Facebk",
+            "Number of Share": 10,
+            "Share Price": 1000
+        },
+        {
+            "Stock Name": "Oracle",
+            "Number of Share": 2,
+            "Share Price": 1000
+        }
+
+    ]
+}

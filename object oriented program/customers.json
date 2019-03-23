@@ -1,0 +1,57 @@
+[
+  {
+    "ID": "1",
+    "Name": "yuvaraj",
+    "Amount": 24568090,
+    "GOOGLE": "0",
+    "ORACLE": "1"
+  },
+  {
+    "ID": "2",
+    "Name": "akhil",
+    "Amount": 3227523,
+    "IBM": "6",
+    "ORACLE": "1"
+  },
+  {
+    "ID": "3",
+    "Name": "jagan",
+    "Amount": 23232323,
+    "ORACLE": "0",
+    "GOOGLE": "5"
+  },
+  {
+    "ID": "4",
+    "Name": "chaithu",
+    "Amount": 22321210012,
+    "DELL": "2"
+  },
+  {
+    "ID": "5",
+    "Name": "bobby",
+    "Amount": 5451545,
+    "IBM": "2",
+    "GOOGLE": "1"
+  },
+  {
+    "ID": "6",
+    "Name": "venky",
+    "Amount": 432544545,
+    "FACEBOOK": "2",
+    "GOOGLE": "1"
+  },
+  {
+    "ID": "7",
+    "Name": "hemanth",
+    "Amount": 2341343,
+    "GOOGLE": "2"
+  },
+  {
+    "ID": "8",
+    "Name": "vishnu",
+    "Amount": 119994600,
+    "ORACLE": "3",
+    "GOOGLE": "3",
+    "IBM": "3"
+  }
+]

@@ -1,0 +1,46 @@
+ {
+
+    "rice": [
+        {
+            "name": "rice",
+            "weight": 6,
+            "price": 67
+
+        },
+        {
+            "name": "brown rice",
+            "weight": 7,
+            "price": 81
+        },
+        {
+            "name": "white rice",
+            "weight": 5,
+            "price": 78
+        }
+    ],
+    "pulse": [
+        {
+            "name": "green gram",
+            "weight": 5,
+            "price": 65
+        },
+        {
+            "name": "red gram",
+            "weight": 6,
+            "price": 72
+        }
+
+    ],
+    "wheat": [
+        {
+            "name": "Hard Red Wheats",
+            "weight": 7,
+            "price": 65
+        },
+        {
+            "name": "Soft Red Wheats",
+            "weight": 6,
+            "price": 63
+        }
+    ]
+}
