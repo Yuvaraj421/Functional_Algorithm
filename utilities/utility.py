@@ -32,7 +32,7 @@ def my_fun():
         print("Invalid Input")
 
 
-"****************************************leap year *************************************************"
+"**************************************** leap year *************************************************"
 
 
 def replace_fun():
@@ -923,7 +923,7 @@ class Node:
         self.next = None
 
 
-class Stack:
+class Stacklinked:
     def __init__(self):
         self.top = None
 
