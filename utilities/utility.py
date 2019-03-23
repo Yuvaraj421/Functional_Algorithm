@@ -16,17 +16,17 @@ def my_fun():
         stop1.stop_timer = time.time()
         print("stop time is", stop1.stop_timer)
 
-    def elapsed():
-        elapsed.elapse_timer = stop1.stop_timer - start1.start_timer
-        print("elapse time is", elapsed.elapse_timer)
-        print("converting million to seconds", (elapsed.elapse_timer // 1000), "sec")
+    def elapsed1():
+        elapsed1.elapse_timer = stop1.stop_timer - start1.start_timer
+        print("elapse time is", elapsed1.elapse_timer)
+        print("converting million to seconds", (elapsed1.elapse_timer // 1000), "sec")
 
     try:
         a = int(input("Press 0 to start the time "))
         b = int(input("Press 1 to Stop the time "))
         start1()
         stop1()
-        elapsed()
+        elapsed1()
 
     except ValueError:
         print("Invalid Input")
@@ -69,7 +69,7 @@ def leap_year():
         print("enter valid year format 4digit")
 
 
-"************************************************  array **************************************"
+"************************************************ 2d array ********************************************************"
 
 
 def my_func(row, col, list1):
@@ -103,14 +103,14 @@ def quadratic_func():
     b = float(input("enter the value of B"))
     c = float(input("enter the value of C"))
     delta = b * b - 4 * a * c
-    print("delta")
+    print("delta", delta)
     try:
         root1 = float(-b + math.sqrt(delta)) / (2 * a)
         root2 = float(-b - math.sqrt(delta)) / (2 * a)
 
         print("value of root1:", root1)
         print("value of root2:", root2)
-    except exception as e:
+    except Exception as e:
         print(e)
 
 
@@ -229,14 +229,14 @@ def fac_fun():
         # if condition true i will be incremented
         if n % i:
             i += 1
-        else:
-            # if condition fails factors append to i
-            n //= i
-            factors.append(i)
+    else:
+        # if condition fails factors append to i
+        n //= i
+        factors.append(i)
     if n > 1:
         factors.append(n)
         # if condition true print the factors
-    print(factors)
+        print(factors)
 
 
 "************************************************* distance **********************************************************"
@@ -255,7 +255,7 @@ def my_function():
         distance = math.sqrt(a + b)
         # print the euclidean distance
         print("euclidean distance =", distance)
-    except exception as e:
+    except Exception as e:
         print(e)
 
 
@@ -374,13 +374,12 @@ def palin_func():
             return True
         return False
 
-    str = "malayalam"
+    str = "1"
     ans = isPalindrome(str)
     if ans == 1:
         print("Yes")
     else:
         print("False")
-
 
 
 "*************************************************** search number ****************************************************"
@@ -404,12 +403,10 @@ def search_number(low, high):
         print("Valid Input")
 
 
-
 "************************************************ binary search*****************************************************"
 
 
 def string_binary():
-
     n = int(input("enter the array size\n"))
     temp = []
     # adding values to the list
@@ -432,10 +429,9 @@ def string_binary():
         # print(middle)
         # mid value of the list
         if str1[middle] == target:
-                # result = str1[middle]
-                print("Element ", str1[middle], " found at ", middle)
-                flag = False
-
+            # result = str1[middle]
+            print("Element ", str1[middle], " found at ", middle)
+            flag = False
 
         if str1[middle] > target:
             # if the mid value is greater than target then end equals mid -1
@@ -521,7 +517,6 @@ def temp_func(cel):
     print("enter temperature is", cel)
 
 
-
 "*************************************************** day of week ******************************************************"
 
 
@@ -549,7 +544,6 @@ def day_func():
         print(e)
 
 
-
 "************************************************* to binary**********************************************************"
 
 
@@ -571,8 +565,8 @@ def to_binary(number):
 
 "*********************************************** monthly payment ******************************************"
 
-def month_fun():
 
+def month_fun():
     principal = float(input("enter the principal\n"))
     year = int(input("enter the year\n"))
     interest = float(input("enter the interest_rate\n"))
@@ -598,12 +592,10 @@ def newton_fun():
         print("enter integer value ")
 
 
-
 "******************************************** bubble sort **********************************************************"
 
 
 def bubble_sort():
-
     number = int(input("enter the size of list\n"))
     list1 = []
     for i in range(number):
@@ -644,7 +636,6 @@ def insertion_sort():
 "******************************************** merge sort ************************************************************"
 
 
-
 def merge_sort1(left_half, right_half, list1):
     i = 0
     j = 0
@@ -674,7 +665,7 @@ def merge_sort(list1):
     left_half = []  # left half list
     right_half = []  # right half list
     if len(list1) <= 1:
-        return   # returns list1
+        return  # returns list1
     mid = len(list1) // 2  # mid value
     for i in range(mid):
         left_half.append(list1[i])  # adding values to the left half
@@ -685,12 +676,10 @@ def merge_sort(list1):
     merge_sort1(left_half, right_half, list1)
 
 
-
 "********************************************* bubble sort ************************************************"
 
 
 def bubble_sort():
-
     number = int(input("enter the size of list\n"))
     list1 = []
     for i in range(number):
@@ -705,7 +694,6 @@ def bubble_sort():
 
 
 "******************************************* string insertion *********************************************************"
-
 
 
 def string_insertion_sort():
@@ -748,9 +736,6 @@ def permut(a, j):
             a[j] = temp
 
 
-
-
-
 "********************************************* string bubble sort *************************************************"
 
 
@@ -770,3 +755,309 @@ def string_bubble_sort():
                 # swapping the elements in the list1
                 list1[j], list1[j + 1] = list1[j + 1], list1[j]
     print(list1)
+
+
+"*************************************************** vending machine ***********************************************"
+
+
+def vending_machine(rupees):
+    # enter the rupee notes
+    money = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
+    # initialize note as zero
+    note = 0
+    for i in range(len(money)):
+        # // is used to generate integer value
+        if rupees // money[i] > 0:
+            print("number of notes in ", money[i], "is ", rupees // money[i])
+            note = note + (rupees // money[i])
+            rupees = rupees % money[i]
+            # reminder is generated and assigned to rupee
+
+    print("number of notes are ", note)
+
+
+"******************************************** anagram prime ****************************************************"
+
+
+def get_anagram_prime():
+    x = get_prime()
+
+    x = [str(i) for i in x]
+    anagram1 = []
+    for i in range(len(x)):
+        for j in range(i + 1, len(x)):
+            if sorted(x[i]) == sorted(x[j]):
+                anagram1.append(x[i])
+                anagram1.append(x[j])
+    return anagram1
+
+
+"**************************************************** get prime **********************************************"
+
+
+def get_prime():
+    list = []
+    is_prime = True
+    for i in range(1001):
+        if i == 0 or i == 1:
+            continue
+        is_prime = True
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+        if is_prime:
+            list.append(i)
+    return list
+
+
+"******************************************** Queued linked list *****************************************"
+
+
+class Node:
+    def __init__(self, data):
+
+        self.data = data
+        self.next = None
+
+
+class QueueLinked:
+    # This Queue class is used to create Queue.
+
+    front = None
+
+    rear = None
+
+    def __init__(self):
+
+        # This is the constructor of Queue class .
+
+        pass
+
+    def enqueue(self, data):
+
+        # This method is used to insert data in the Queue .
+
+        node = Node(data)
+
+        if self.front is None and self.rear is None:  # If Null
+
+            self.front = node  # Assign Nodes in front and a rear
+
+            self.rear = node
+
+        else:
+
+            self.rear.next = node  # assign node to rear of next
+
+            self.rear = self.rear.next
+
+    def show(self):
+
+        # This method is used to display content of queue .
+
+        if self.front is None:
+            print("Linked List  is empty")
+
+            return
+
+        while self.front.next is not None:
+            print(self.front.data)
+
+            self.front = self.front.next
+
+        print(self.front.data)
+
+    def dequeue(self):
+
+        # This method is used to delete data from the Queue.
+        # data will deleted according to FIFO principle
+
+        temp = self.front  # keep data in a temporary variable for deletion
+
+        self.front = self.front.next
+
+        return temp.data
+
+    def is_empty(self):
+
+        # This method is used to know whether Queue is empty or not.
+
+        if self.front is None:
+
+            return True
+
+        else:
+
+            return False
+
+    def size(self):
+
+        # This method is used to display content of queue.
+
+        size = 1
+
+        traverse = self.front
+
+        if self.front is None:
+            return 0
+
+        while traverse.next is not None:
+            traverse = traverse.next
+
+            size += 1
+
+        return size
+
+
+queue1 = QueueLinked()
+
+
+
+"********************************************** stack ***************************************************"
+
+
+class Node:
+    def __init__(self, data):
+
+        self.data = data
+        self.next = None
+
+
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def isEmpty(self):
+        # this block check the linked list
+
+        if self.top == None:
+            return True
+        else:
+            return False
+
+    def push(self, data):
+
+        # this block add the element into stack
+
+        node = Node(data)
+        node.next = self.top
+        self.top = node
+
+    def pop(self):
+
+        # this block pop the element one by one
+
+        if self.top is None:
+            return "Stack empty"
+
+        element = self.top
+        self.top = self.top.next
+        return element.data
+
+    def size(self):
+
+        # this block check the size of the linked list
+
+        temp = self.top
+        count = 0
+        while temp != None:
+            count += 1
+            temp = temp.next
+        return count
+
+    def print(self):
+
+        # this block print the element
+
+        if self.top is None:
+            print("Stack is empty!!!")
+            return
+        current = self.top
+        while current != None:
+            print(current.data)
+            current = current.next
+
+
+"*************************************************** queue ************************************************"
+
+
+
+
+class Queue:
+    """
+    This Queue class is used to create Queue.
+    """
+    front = None
+    rear = None
+
+    def __init__(self):
+        """
+        This is the constructor of Queue class .
+        """
+        pass
+
+    def enqueue(self, data):
+
+        node = Node(data)
+
+        if self.front is None and self.rear is None:
+
+            self.front = node       # front and rear assign to new node
+            self.rear = node
+
+        else:
+
+            self.rear.next = node        # else add element in queue by rear
+            self.rear = self.rear.next
+
+    def show(self):
+        """
+        This method is used to display content of queue .
+        """
+
+        if self.front is None:
+            print("Queue is empty")     # print if queue is empty
+            return
+
+        while self.front.next is not None:
+            print(self.front.data)          # print queue data
+            self.front = self.front.next
+
+        print(self.front.data)
+
+    def dequeue(self):
+        """
+        This method is used to delete data from the Queue.
+        data will deleted according to FIFO principle
+        """
+        global temp
+        temp = self.front
+        self.front = self.front.next        # delete data which is pointed by front pointer
+        return temp.data                # return deleted data
+
+    def is_empty(self):
+        """
+       This method is used to know whether Queue is empty or not.
+       """
+        if self.front is None:
+            return True
+        else:
+            return False
+
+    def size(self):
+        """
+        This method is used to display content of queue.
+        """
+
+        size = 1
+        traverse = self.front
+        if self.front is None:      # return 0 if queue is empty
+            return 0
+
+        while traverse.next is not None:
+            traverse = traverse.next        # traverse till last element and count size
+            size += 1
+        return size
+
+
+queue = Queue()
