@@ -1,5 +1,7 @@
-import json
+
 from utilities.utility import Queue
+import json
+
 
 q1 = Queue()
 # creating object of Queue class to access all the method present in that class

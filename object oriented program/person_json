@@ -1,0 +1,14 @@
+{
+  "person_detail" : [
+    {
+      "username" : "raj",
+      "buy share" : "523",
+      "sell share" : "600"
+    },
+    {
+      "user2" : "krishna",
+      "buy share" : "421",
+      "sell share" : "500"
+    }
+  ]
+}
